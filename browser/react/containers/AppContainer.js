@@ -12,6 +12,8 @@ import Player from '../components/Player';
 
 import { convertAlbum, convertAlbums, convertSong, skip } from '../utils';
 
+import setLyrics from '../action-creators/lyrics'
+
 export default class AppContainer extends Component {
 
   constructor (props) {
@@ -196,6 +198,7 @@ export default class AppContainer extends Component {
       addSongToPlaylist: this.addSongToPlaylist
     });
 
+    console.log(setLyrics('this is a lyrics'))
     return (
       <div id="main" className="container-fluid">
         <div className="col-xs-2">
