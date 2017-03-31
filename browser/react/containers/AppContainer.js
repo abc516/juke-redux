@@ -12,7 +12,7 @@ import Player from '../components/Player';
 
 import { convertAlbum, convertAlbums, convertSong, skip } from '../utils';
 
-import setLyrics from '../action-creators/lyrics'
+import {setLyrics} from '../action-creators/lyrics'
 
 export default class AppContainer extends Component {
 
@@ -218,6 +218,7 @@ export default class AppContainer extends Component {
           prev={this.prev}
           toggle={this.toggle}
         />
+
       </div>
     );
   }
